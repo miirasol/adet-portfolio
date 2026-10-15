@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>miirasol | Portfolio</title>
+		<meta
+			name="description"
+			content="Personal portfolio of James Mirasol, a web developer."
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container header-inner">
+				<a href="#home" class="brand">sol</a>
+
+				<nav id="site-nav" class="nav" aria-label="Main navigation">
+					<a href="#home" class="nav-link">About</a>
+					<a href="#projects" class="nav-link">Projects</a>
+					<a href="#contact" class="nav-link">Contact</a>
+				</nav>
+
+				<div class="header-actions">
+					<button
+						id="theme-toggle"
+						class="btn btn-ghost btn-icon"
+						type="button"
+						aria-label="Toggle dark mode"
+					>
+						<svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+							<circle cx="12" cy="12" r="4" />
+							<path
+								d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+							/>
+						</svg>
+						<svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+							<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+						</svg>
+					</button>
+
+					<button
+						id="menu-toggle"
+						class="btn btn-ghost btn-icon menu-toggle"
+						type="button"
+						aria-label="Open menu"
+						aria-expanded="false"
+						aria-controls="site-nav"
+					>
+						<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+							<path d="M4 6h16M4 12h16M4 18h16" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section id="home" class="section hero">
+				<div class="container hero-inner">
+					<div class="hero-text">
+						<span class="badge badge-outline">Open to internships</span>
+						<h1>Hi, I'm Sol.<br />I build things for the web.</h1>
+						<p class="lead">
+							I'm an IT student who enjoys turning ideas into clean, usable
+							interfaces with React, Firebase, and a lot of coffee.
+						</p>
+						<p class="muted">
+							I started with HTML and CSS, then moved on to JavaScript and
+							React. Lately I've been practicing with small projects like a
+							tic-tac-toe game and an etch-a-sketch pad. I care about simple
+							layouts, readable code, and interfaces that are easy to use.
+						</p>
+						<div class="hero-buttons">
+							<a href="#projects" class="btn btn-primary">View projects</a>
+							<a href="#contact" class="btn btn-outline">Contact me</a>
+						</div>
+					</div>
+
+					<img
+						class="avatar"
+						src="images/profile.jpg"
+						alt="Portrait of Sol"
+						width="240"
+						height="240"
+					/>
+				</div>
+			</section>
+
+			<section id="projects" class="section">
+				<div class="container">
+					<h2>Projects</h2>
+					<p class="muted section-sub">
+						Two projects I built while practicing JavaScript.
+					</p>
+
+					<div class="grid">
+						<article class="card">
+							<div class="card-header">
+								<h3 class="card-title">Tic-Tac-Toe</h3>
+								<p class="card-description">
+									A tic-tac-toe game that runs in the browser, built as part of
+									The Odin Project curriculum and bundled with Vite.
+								</p>
+							</div>
+							<div class="card-content">
+								<ul class="badge-list" aria-label="Technologies used">
+									<li class="badge">JavaScript</li>
+									<li class="badge">Vite</li>
+									<li class="badge">HTML</li>
+								</ul>
+							</div>
+							<div class="card-footer">
+								<a
+									href="https://github.com/miirasol/odin-tic-tac-toe"
+									class="btn btn-outline btn-sm"
+									target="_blank"
+									rel="noopener"
+									>View on GitHub</a
+								>
+							</div>
+						</article>
+
+						<article class="card">
+							<div class="card-header">
+								<h3 class="card-title">Etch-a-Sketch</h3>
+								<p class="card-description">
+									A sketchpad built on a grid of squares, with a Make Grid
+									button to start over with a new grid. Inspired by the popular
+									kid toy of the same name.
+								</p>
+							</div>
+							<div class="card-content">
+								<ul class="badge-list" aria-label="Technologies used">
+									<li class="badge">JavaScript</li>
+									<li class="badge">HTML</li>
+									<li class="badge">CSS</li>
+								</ul>
+							</div>
+							<div class="card-footer">
+								<a
+									href="https://github.com/miirasol/etch-a-sketch"
+									class="btn btn-outline btn-sm"
+									target="_blank"
+									rel="noopener"
+									>View on GitHub</a
+								>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer id="contact" class="site-footer">
+			<div class="container">
+				<div class="footer-top">
+					<div>
+						<h2>Let's work together</h2>
+						<p class="muted">
+							Have a project, internship, or question? Send me a message.
+						</p>
+					</div>
+					<a href="mailto:jamesmirasol@proton.me" class="btn btn-primary"
+						>Email me</a
+					>
+				</div>
+
+				<hr class="separator" />
+
+				<div class="footer-bottom">
+					<p class="muted small">
+						&copy; 2026 James Michael Mirasol. All rights reserved.
+					</p>
+					<ul class="social-list">
+						<li>
+							<a href="mailto:jamesmirasol@proton.me" class="link"
+								>jamesmirasol@proton.me</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://github.com/miirasol"
+								class="link"
+								target="_blank"
+								rel="noopener"
+								>GitHub</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
